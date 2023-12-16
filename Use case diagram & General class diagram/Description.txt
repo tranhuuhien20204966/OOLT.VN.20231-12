@@ -1,0 +1,41 @@
+* Cấu tạo tế bào nhân sơ (tế bào vi khuẩn)
+
+Tế bào vi khuẩn gồm thành phần chính: thành tế bào, màng sinh chất, tế bào chất và nuclêôtit
+
+- Thành tế bào :  tầm quan trọng trong việc sử dụng các loại kháng sinh đặc hiệu để chống từng nhóm vi khuẩn gây bệnh
+Ngoài ra, ở một số vi khuẩn còn có lông và roi. Lông có chức năng như những thụ thể tiếp nhận các virut, hoặc có thể giúp vi khuẩn trong quá trình tiếp hợp; một số vi khuẩn gây bệnh ở người thì lông giúp chúng bám được vào bề mặt tế bào người. Roi có chức năng giúp vi khuẩn di chuyển.
+
+- Tế bào chất : Tế bào chất chứa tới 65 - 90% nước, các chất vô cơ và hữu cơ khác nhau. Phân bố trong tế bào chất có nhiều ribôxôm (từ 10.000 - 100.000) là nơi tổng hợp prôtêin của vi khuẩn. Nhiều chỗ màng sinh chất gấp nếp lồi lõm vào tế bào chất tạo nên các mêzôxôm được xem như một loại bào quan có vai trò trong sự phân bào, hoặc hô hấp hiếu khí (khi trong mêzôxôm có chứa các enzim cần cho hô hấp hiếu khí ở vi khuẩn hiếu khí).
+
+- Vùng nhân : Trong tế bào chết, ngoài ADN trong nuclêôtit, còn có một số phân tử ADN khác được gọi là plasmit chứa thông tin di truyền quy định một số đặc tính của vi khuẩn như tính kháng thuốc. Plasmit của một vi khuẩn này có khả năng tải nạp sang các vi khuẩn khác, vì vậy có thể sử dụng plasmit như một vectơ để chuyển tải gen tái tổ hợp từ tế bào này sang tế bào khác.
+
+*  Tế bào nhân thực có cấu tạo phức tạp gồm ba thành phần: màng sinh chất, tế bào chất và nhân
+
+- Nhân : Điều khiển hoạt động sống của tế bào, nhờ ADN mang thông tin di truyền của toàn bộ cơ thể. Trong nhân diễn ra quá trình sao chép mã: ADN mẹ được sao chép thành các ADN con và thông qua sự phân đôi tế bào. ADN sẽ được di truyền qua thế hệ tế bào.
+Phiên mã để tổng hợp các dạng ARN cần thiết cho sự dịch mã để tổng hợp prôtêin, thể hiện thông tin di truyền từ kiểu gen đến kiểu hình.
+
+- Ribôxôm : Ribôxôm là nơi tổng hợp prôtêin. Bình thường thì 2 tiểu đơn vị tồn tại riêng rẽ nhưng khi tổng hợp prôtêin, chúng sẽ liên kết tạo thành ribôxôm với sự có mặt của Ca2+ và Mg2+. Khi tổng hợp prôtêin, các ribôxôm có thể liên kết với nhau tạo thành phức hệ gọi là pôlixôm.
+
+- Khung tế bào : Tế bào chất của tế bào nhân thực có hệ thống mạng sợi và ống prôtêin (vi ống, vi sợi, sợi trung gian) đan chéo nhau, có tác dụng duy trì hình dạng và neo giữ các bào quan như: ti thể, ribôxôm, nhân vào các vị trí cố định gọi là khung nâng đỡ tế bào.
+Các vi ống có chức năng tạo nên bộ thoi vô sắc. Các vị ống và vi sợi cũng là thành phần cấu tạo nên roi của tế bào. Các sợi trung gian là thành tố bền nhất của khung tế bào, gồm một hệ thống các sợi protein bền.
+
+- Trung thể : Trung thể là nơi lắp ráp và tổ chức của các vi ống trong tế bào động vật. Mỗi trung thể gồm hai trung tử xếp thẳng góc với nhau theo trục dọc. Trung tử là ống hình trụ, rỗng, dài, có đường kính khoảng 0,13μm, gồm nhiều bộ ba vi ống xếp thành vòng.
+Trung tử là bào quan hình thành nên thoi vô sắc trong quá trình phân chia tế bào.
+ 
+- Ti thể : Ti thể là nơi cung cấp năng lượng cho tế bào dưới dạng các phân tử ATP. Ngoài ra, ti thể còn tạo ra nhiều sản phẩm trung gian có vai trò quan trọng trong quá trình chuyển hoá vật chất.
+
+- Lục lạp : Lục lạp có chức năng quang hợp. Ánh sáng mặt trời ở dạng các quang tử được hấp phụ bởi chất diệp lục, các điện tử được giải phóng và được truyền đi qua dãy truyền điện tử ATP được tổng hợp nhờ phức hệ ATP – xintetaza. Lục lạp sử dụng năng lượng ATP và hệ enzim trong cơ chất để tổng hợp cacbohiđrat.
+
+-  Lưới nội chất : Lưới nội chất có chức năng vận tải nội bào. Các chất được tích lũy trong kênh và được vận chuyển đến các phần khác nhau của tế bào.
+Ngoài ra, lưới nội chất còn là nơi tổng hợp các lipit, cacbohiđrat (lưới nội chất trơn) và tổng hợp prôtêin (lưới nội chất hạt vì chúng có các ribôxôm).
+
+- Bộ máy Gôngi và lizôxôm :
+ Bộ máy Gôngi có chức năng là gắn nhóm tiền tố cacbohiđrat vào prôtêin được tổng hợp ở lưới nội chất hạt, tổng hợp một số hoocmôn và tạo ra các túi có màng bao bọc (như túi tiết, lizôxôm). Bộ máy Gôngi được coi như một phân xưởng thu gom, bao gói, biến đổi và phân phối các sản phẩm đã được tổng hợp ở một vị trí này đến sử dụng ở một vị trí khác trong tế bào hoặc tiết ra khỏi tế bào.
+ Tiêu hoá nội bào. (phân hủy các tế bào già, các tế bào bị tổn thương cũng như các bào quan đã hết hạn sử dụng)
+
+- Không bào:
+Mỗi không bào ở tế bào thực vật được bao bọc bởi một lớp màng, bên trong là dịch không bào chứa các chất hữu cơ và các ion khoáng tạo nên áp suất thẩm thấu của tế bào. Một số tế bào cánh hoa của thực vật có không bào chứa các sắc tố làm nhiệm vụ thu hút côn trùng đến thụ phấn. Một số không bào khác lại chứa các chất phế thải, thậm chí rất độc đối với các loài ăn thực vật. Một số loài thực vật lại dùng không bào để dự trữ chất dinh dưỡng. Một số tế bào động vật còn không bào bé; các nguyên sinh động vật thì có không bào tiêu hoá phát triển. 
+
+- Màng sinh chất:
+Màng sinh chất là ranh giới bên ngoài và là bộ phận chọn lọc các chất từ môi trường đi vào tế bào và ngược lại. Màng sinh chất đảm nhận nhiều chức năng quan trọng của tế bào như : vận chuyển các chất, tiếp nhận và truyền thông tin từ bên ngoài vào trong tế bào, là nơi định vị của nhiều loại enzim, các prôtêin màng làm nhiệm vụ ghép nối các tế bào trong một mô...
+Màng sinh chất có các “dấu chuẩn” là glicôprôtêin đặc trưng cho từng loại tế bào. Nhờ vậy, các tế bào của cùng một cơ thể có thể nhận biết ra nhau và nhận biết được các tế bào lạ của cơ thể khác.
