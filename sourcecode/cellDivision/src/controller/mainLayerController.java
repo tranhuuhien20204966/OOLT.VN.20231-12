@@ -17,6 +17,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
+import model.eukaryoticCell;
 import model.prokaryoticCell;
 
 public class mainLayerController {
@@ -52,13 +53,51 @@ public class mainLayerController {
     }
 
     @FXML
-    void displayMitosis(ActionEvent event) {
-    	
+    void displayMitosis(ActionEvent event) throws IOException {
+    	 int i = 0;
+	       ArrayList<Image> Mitosis = new ArrayList<Image>(); // You can change 10 to the desired size
+	        do {
+			    try {
+			        Mitosis.add(new Image("/image/eukaryotic/Mitosis/Mi_phase" + (i + 1) + ".png"));
+			        ++i;
+			        System.out.println("Ok" + i);
+			    } catch (Exception e) {
+			        /// In thông báo lỗi
+			        
+			        // Exit vòng l
+			        break;
+			    }
+			} while (true);
+	            
+  		eukaryoticCell eukaCell = new eukaryoticCell();
+  		MenuItem clickedMenuItem = (MenuItem) event.getSource();
+  		stage = (Stage) clickedMenuItem.getParentPopup().getOwnerWindow();
+          showcellDivisionImage("/image/eukaryotic/euka.png	", stage, eukaCell, Mitosis);
+          (new eukaryoticCell()).DisplayCellOfInfor();
     }
     
     @FXML
-    void displayMeiosis(ActionEvent event) {
-    	
+    void displayMeiosis(ActionEvent event) throws IOException {
+   	 int i = 0;
+     ArrayList<Image> Meiosis = new ArrayList<Image>(); // You can change 10 to the desired size
+      do {
+		    try {
+		        Meiosis.add(new Image("/image/eukaryotic/Meiosis/Me_phase" + (i + 1) + ".png"));
+		        ++i;
+		        System.out.println("Ok" + i);
+		    } catch (Exception e) {
+		        /// In thông báo lỗi
+		        
+		        // Exit vòng l
+		        break;
+		    }
+		} while (true);
+          
+	eukaryoticCell eukaCell = new eukaryoticCell();
+	MenuItem clickedMenuItem = (MenuItem) event.getSource();
+	stage = (Stage) clickedMenuItem.getParentPopup().getOwnerWindow();
+    showcellDivisionImage("/image/eukaryotic/euka.png", stage, eukaCell, Meiosis);
+    (new eukaryoticCell()).DisplayCellOfInfor();
     }
 
 
@@ -108,7 +147,8 @@ public class mainLayerController {
         Parent root = loader.load();
         contentLayerController imageScreenController = loader.getController();
         imageScreenController.setImage(imagePath, ImageList.get(0));
-        imageScreenController.setContentCell(object, imageScreenController.getVBox());
+        imageScreenController.setContentCell(object);
+        imageScreenController.loadImageArray(ImageList);
 //        Stage stage = new Stage();
 //        stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));

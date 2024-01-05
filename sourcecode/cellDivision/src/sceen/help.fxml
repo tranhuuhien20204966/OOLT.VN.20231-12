@@ -8,17 +8,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.helpLayerController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="632.0" style="-fx-background-color: #c6d3da;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.helpLayerController">
    <children>
       <Button fx:id="BackButton" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="73.0" text="Back">
          <VBox.margin>
             <Insets bottom="22.0" left="22.0" right="22.0" top="22.0" />
          </VBox.margin>
       </Button>
-      <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" opacity="0.98" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: grey; -fx-border-radius: 50;" text="Help">
+      <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" opacity="0.98" prefHeight="26.0" prefWidth="74.0" style="-fx-border-radius: 50;" text="Help" textFill="#964444">
          <font>
-            <Font size="17.0" />
+            <Font size="24.0" />
          </font>
          <VBox.margin>
             <Insets bottom="-3.0" left="265.0" top="-27.0" />

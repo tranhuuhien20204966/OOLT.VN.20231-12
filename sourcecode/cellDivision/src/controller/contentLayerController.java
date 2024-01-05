@@ -14,6 +14,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -41,11 +42,21 @@ public class contentLayerController {
     @FXML
     private VBox Vbox ;
    
-    public VBox getVBox() {
-        return Vbox;
-    }
+    private int currentPhase = 0;
     
     private ArrayList<Image> cellDivisionProcessImage = new ArrayList<Image>();
+    
+    @FXML
+    private ProgressBar processBar;
+    
+    double progress ;
+    
+    @FXML
+    void initialize() {
+    	processBar.setStyle("-fx-accent : #58b7c5");
+    	
+    }
+    
     
     @FXML
     void goBack(ActionEvent event) throws IOException {
@@ -65,7 +76,7 @@ public class contentLayerController {
         CellDivision.setImage(firstPhase);
     }
     
-    public void setContentCell(Object obj, VBox vbox) {
+    public void setContentCell(Object obj) {
     	Class<?> clazz = obj.getClass();
         // Lấy tất cả các trường của lớp
         Field[] fields = clazz.getDeclaredFields();
@@ -91,12 +102,26 @@ public class contentLayerController {
     
     @FXML
     void showNextPhase(ActionEvent event) {
-
+    	if(currentPhase < cellDivisionProcessImage.size() - 1) {
+        CellDivision.setImage(cellDivisionProcessImage.get(currentPhase + 1));
+        currentPhase = currentPhase + 1;
+        progress =(double) currentPhase/(cellDivisionProcessImage.size()-2);
+        System.out.println(currentPhase + "/" + (cellDivisionProcessImage.size()-1) );
+        System.out.println(progress);
+        processBar.setProgress(progress);
+    	}
     }
 
     @FXML
     void showPreviousPhase(ActionEvent event) {
-
+    	if(currentPhase > 0) {
+    		CellDivision.setImage(cellDivisionProcessImage.get(currentPhase - 1));
+    		currentPhase = currentPhase - 1;
+    		progress = (double)currentPhase/(cellDivisionProcessImage.size()-2);
+    		System.out.println(currentPhase + cellDivisionProcessImage.size()-1);
+    		System.out.println(progress);
+    		processBar.setProgress(progress);
+    	}
     }
     
     public void loadImageArray(ArrayList<Image> ImageArray ) {
@@ -104,6 +129,37 @@ public class contentLayerController {
     		cellDivisionProcessImage.add(image);
     	}
     }
+    // Em làm cho anh thêm chức năng này nha kiểu anh có 1 mảng ảnh cellDivisionProcessImage và muốn hiển thị mỗi
+    // ảnh lần lượt vào CellDivision thì xử lý các nút còn lại
+	//    	Start : khi nhấn sẽ trở về ảnh đầu trong mảng cellDivisionProcessImage sau đó màn cellDivison sẽ tự động next
+	//    	ảnh tầm 2,3s gì đấy cho đến ảnh cuối trong mảng cellDivisionProcessImage
+	//    	Continue : khi nhấn sẽ lấy phaseCurrent và auto chạy tiếp
+	//    	Pause : Lấy phasecurrent và hiển thị ảnh của phase đó
+	//    	replay : giống start tuy nhiên điều kiện phaseCurrent là phase cuối
+    	
+    
+    @FXML
+    void continueProcess(ActionEvent event) {
+
+    }
+
+
+    @FXML
+    void pauseProcess(ActionEvent event) {
+
+    }
+
+    @FXML
+    void replayProcess(ActionEvent event) {
+
+    }
+
+
+    @FXML
+    void startProcess(ActionEvent event) {
+
+    }
+
 
 }
    
