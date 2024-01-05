@@ -45,9 +45,7 @@ System.out.println("Field: " + fieldName + ", Value: " + value);
 				        i++;
 				        System.out.println("Ok" + i);
 				    } catch (Exception e) {
-				        /// In thông báo lỗi
-				        System.out.println("Lỗi khi tải ảnh: " + e.getMessage());
-				        // Exit vòng l
+				       
 				        break;
 				    }
 				} while (true);
