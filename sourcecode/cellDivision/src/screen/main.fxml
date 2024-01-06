@@ -1,89 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.geometry.Rectangle2D?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="632.0" style="-fx-background-color: #c6d3da;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainLayerController">
-   <top>
-      <Label text="Demonstration of types of cell division" textFill="#964444" BorderPane.alignment="TOP_CENTER">
-         <font>
-            <Font size="24.0" />
-         </font>
-         <BorderPane.margin>
-            <Insets top="15.0" />
-         </BorderPane.margin>
-      </Label>
-   </top>
-   <center>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="289.0" fitWidth="359.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-               <viewport>
-                  <Rectangle2D />
-               </viewport>
-               <HBox.margin>
-                  <Insets left="31.0" top="-43.0" />
-               </HBox.margin>
-               <image>
-                  <Image url="@../image/cellIntro.jpg" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </ImageView>
-            <AnchorPane prefHeight="349.0" prefWidth="283.0" style="-fx-background-color: #c6d3da;" HBox.hgrow="ALWAYS">
-               <children>
-                  <VBox alignment="CENTER" layoutX="73.0" layoutY="53.0" prefHeight="200.0" prefWidth="138.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="105.0">
-                     <children>
-                        <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="116.0" prefWidth="205.0" style="-fx-background-color: #a7b6bd;" text="Type of cell" VBox.vgrow="ALWAYS">
-                          <content>
-                            <AnchorPane minHeight="20.0" minWidth="100.0" prefHeight="90.0" prefWidth="183.0">
-                                 <children>
-                                    <Button fx:id="ProkaCellButton" layoutX="29.0" layoutY="14.0" mnemonicParsing="false" onAction="#displayAmitosis" text="Prokaryotic" />
-                                    <MenuButton layoutX="23.0" layoutY="49.0" mnemonicParsing="false" text="Eukaryotic">
-                                      <items>
-                                        <MenuItem mnemonicParsing="false" onAction="#displayMeiosis" text="Meiosis" />
-                                        <MenuItem mnemonicParsing="false" onAction="#displayMitosis" text="Mitosis" />
-                                      </items>
-                                    </MenuButton>
-                                 </children>
-                                 <padding>
-                                    <Insets bottom="22.0" />
-                                 </padding>
-                              </AnchorPane>
-                          </content>
-                           <VBox.margin>
-                              <Insets left="-1.0" />
-                           </VBox.margin>
-                        </TitledPane>
-                        <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false" onAction="#displayInforHelp" text="Help" VBox.vgrow="ALWAYS">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </Button>
-                        <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false" onAction="#Exit" text="Exit" VBox.vgrow="ALWAYS">
-                           <VBox.margin>
-                              <Insets top="15.0" />
-                           </VBox.margin>
-                        </Button>
-                     </children>
-                  </VBox>
-               </children>
-            </AnchorPane>
-         </children>
-      </HBox>
-   </center>
+<BorderPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="498.0" prefWidth="632.0" style="-fx-background-color: #c6d3da;"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.mainLayerController">
+    <top>
+        <Label text="Demonstration of types of cell division" textFill="#964444" BorderPane.alignment="TOP_CENTER">
+            <font>
+                <Font size="24.0"/>
+            </font>
+            <BorderPane.margin>
+                <Insets top="15.0"/>
+            </BorderPane.margin>
+        </Label>
+    </top>
+    <center>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="289.0" fitWidth="359.0" pickOnBounds="true" preserveRatio="true"
+                           HBox.hgrow="ALWAYS">
+                    <viewport>
+                        <Rectangle2D/>
+                    </viewport>
+                    <HBox.margin>
+                        <Insets left="31.0" top="-43.0"/>
+                    </HBox.margin>
+                    <image>
+                        <Image url="@../image/cellIntro.jpg"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="NONE"/>
+                    </cursor>
+                </ImageView>
+                <AnchorPane prefHeight="349.0" prefWidth="283.0" style="-fx-background-color: #c6d3da;"
+                            HBox.hgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER" layoutX="73.0" layoutY="53.0" prefHeight="200.0" prefWidth="138.0"
+                              AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="105.0">
+                            <children>
+                                <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="116.0"
+                                            prefWidth="205.0" style="-fx-background-color: #a7b6bd;" text="Type of cell"
+                                            VBox.vgrow="ALWAYS">
+                                    <content>
+                                        <AnchorPane minHeight="20.0" minWidth="100.0" prefHeight="90.0"
+                                                    prefWidth="183.0">
+                                            <children>
+                                                <Button fx:id="ProkaCellButton" layoutX="29.0" layoutY="14.0"
+                                                        mnemonicParsing="false" onAction="#displayAmitosis"
+                                                        text="Prokaryotic"/>
+                                                <MenuButton layoutX="23.0" layoutY="49.0" mnemonicParsing="false"
+                                                            text="Eukaryotic">
+                                                    <items>
+                                                        <MenuItem mnemonicParsing="false" onAction="#displayMeiosis"
+                                                                  text="Meiosis"/>
+                                                        <MenuItem mnemonicParsing="false" onAction="#displayMitosis"
+                                                                  text="Mitosis"/>
+                                                    </items>
+                                                </MenuButton>
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="22.0"/>
+                                            </padding>
+                                        </AnchorPane>
+                                    </content>
+                                    <VBox.margin>
+                                        <Insets left="-1.0"/>
+                                    </VBox.margin>
+                                </TitledPane>
+                                <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false"
+                                        onAction="#displayInforHelp" text="Help" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets top="20.0"/>
+                                    </VBox.margin>
+                                </Button>
+                                <Button minHeight="20.0" minWidth="100.0" mnemonicParsing="false" onAction="#Exit"
+                                        text="Exit" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets top="15.0"/>
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </center>
 </BorderPane>

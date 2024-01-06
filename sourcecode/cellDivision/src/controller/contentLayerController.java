@@ -1,12 +1,5 @@
 package controller;
 
-import javafx.scene.control.Label;
-import java.io.IOException;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -15,14 +8,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
+import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class contentLayerController {
 
@@ -48,7 +45,7 @@ public class contentLayerController {
 
     private int currentPhase = 0;
 
-    private ArrayList<Image> cellDivisionProcessImage = new ArrayList<Image>();
+    private final ArrayList<Image> cellDivisionProcessImage = new ArrayList<Image>();
 
     @FXML
     private ProgressBar processBar;

@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class test extends Application {
 
     @Override
-    public void start(Stage primaryStage) {	
+    public void start(Stage primaryStage) {
         // Tạo một đoạn văn bản đa dòng
         Text multilineText = new Text("Line 1\nLine 2\nLine 3");
         multilineText.setFont(new Font(14)); // Đặt kích thước font

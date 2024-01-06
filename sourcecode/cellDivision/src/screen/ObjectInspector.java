@@ -1,64 +1,64 @@
 package screen;
 
-	import java.lang.reflect.Field;
-import java.util.ArrayList;
-
 import javafx.scene.image.Image;
 import model.prokaryoticCell;
 
-	public class ObjectInspector {
-	    public static void inspect(Object obj) {
-	        Class<?> clazz = obj.getClass();
+import java.lang.reflect.Field;
+import java.util.ArrayList;
 
-	        System.out.println("Inspecting class: " + clazz.getName());
+public class ObjectInspector {
+    public static void inspect(Object obj) {
+        Class<?> clazz = obj.getClass();
 
-	        // Lấy tất cả các trường của lớp
-	        Field[] fields = clazz.getDeclaredFields();
+        System.out.println("Inspecting class: " + clazz.getName());
 
-	        for (Field field : fields) {
-	            field.setAccessible(true); // Cho phép truy cập trường private
-	            String fieldName = field.getName();
-	            Object value;
+        // Lấy tất cả các trường của lớp
+        Field[] fields = clazz.getDeclaredFields();
 
-	            try {
-	                value = field.get(obj);
-	            } catch (IllegalAccessException e) {
-	                value = "Cannot access the field";
-	            }
-System.out.println("Field: " + fieldName + ", Value: " + value);
-	            
-	        }
-	    }
+        for (Field field : fields) {
+            field.setAccessible(true); // Cho phép truy cập trường private
+            String fieldName = field.getName();
+            Object value;
 
-	    public static void main(String[] args) {
-	        // Tạo một đối tượng để kiểm tra
-	        
-	        prokaryoticCell pro = new prokaryoticCell();
+            try {
+                value = field.get(obj);
+            } catch (IllegalAccessException e) {
+                value = "Cannot access the field";
+            }
+            System.out.println("Field: " + fieldName + ", Value: " + value);
 
-	        // Gọi phương thức inspect để hiển thị thông tin về đối tượng
-	        inspect(pro);
-		        int i = 0;
-		       ArrayList<Image> Amitosis = new ArrayList<Image>(); // You can change 10 to the desired size
-		        do {
-				    try {
-				        Amitosis.add(new Image("/image/prokaryotic/amitosis/phase0.png"));
-				        i++;
-				        System.out.println("Ok" + i);
-				    } catch (Exception e) {
-				       
-				        break;
-				    }
-				} while (true);
-		        
-		        System.out.println(Amitosis.size());
-		        for (Image image : Amitosis) {
-		            // Sử dụng đối tượng 'image' theo cần thiết
-		            // Ví dụ: bạn có thể hiển thị nó trong ImageView hoặc thực hiện các thao tác khác
-		            System.out.println("Image: " + image.getUrl());
-		        }
+        }
+    }
 
-	    }
-	}
+    public static void main(String[] args) {
+        // Tạo một đối tượng để kiểm tra
+
+        prokaryoticCell pro = new prokaryoticCell();
+
+        // Gọi phương thức inspect để hiển thị thông tin về đối tượng
+        inspect(pro);
+        int i = 0;
+        ArrayList<Image> Amitosis = new ArrayList<Image>(); // You can change 10 to the desired size
+        do {
+            try {
+                Amitosis.add(new Image("/image/prokaryotic/amitosis/phase0.png"));
+                i++;
+                System.out.println("Ok" + i);
+            } catch (Exception e) {
+
+                break;
+            }
+        } while (true);
+
+        System.out.println(Amitosis.size());
+        for (Image image : Amitosis) {
+            // Sử dụng đối tượng 'image' theo cần thiết
+            // Ví dụ: bạn có thể hiển thị nó trong ImageView hoặc thực hiện các thao tác khác
+            System.out.println("Image: " + image.getUrl());
+        }
+
+    }
+}
 
 	
 
