@@ -53,7 +53,7 @@ public class contentLayerController {
     @FXML
     private ProgressBar processBar;
 
-    double progress;
+    double progress = 0;
 
     @FXML
     void initialize() {
@@ -108,7 +108,7 @@ public class contentLayerController {
         if (currentPhase < cellDivisionProcessImage.size() - 1) {
             CellDivision.setImage(cellDivisionProcessImage.get(currentPhase + 1));
             currentPhase = currentPhase + 1;
-            progress = (double) currentPhase / (cellDivisionProcessImage.size() - 2);
+            progress += 1.0 / (cellDivisionProcessImage.size() - 1);
             processBar.setProgress(progress);
         }
     }
@@ -118,7 +118,7 @@ public class contentLayerController {
         if (currentPhase > 0) {
             CellDivision.setImage(cellDivisionProcessImage.get(currentPhase - 1));
             currentPhase = currentPhase - 1;
-            progress = (double) currentPhase / (cellDivisionProcessImage.size() - 2);
+            progress -= 1.0 / (cellDivisionProcessImage.size() - 1);
             processBar.setProgress(progress);
         }
     }
@@ -128,9 +128,27 @@ public class contentLayerController {
             cellDivisionProcessImage.add(image);
         }
     }
+    // Em làm cho anh thêm chức năng này nha kiểu anh có 1 mảng ảnh
+    // cellDivisionProcessImage và muốn hiển thị mỗi
+    // ảnh lần lượt vào CellDivision thì xử lý các nút còn lại
+    // Start : khi nhấn sẽ trở về ảnh đầu trong mảng cellDivisionProcessImage sau đó
+    // màn cellDivison sẽ tự động next
+    // ảnh tầm 2,3s gì đấy cho đến ảnh cuối trong mảng cellDivisionProcessImage
+    // Continue : khi nhấn sẽ lấy phaseCurrent và auto chạy tiếp
+    // Pause : Lấy phasecurrent và hiển thị ảnh của phase đó
+    // replay : giống start tuy nhiên điều kiện phaseCurrent là phase cuối
+
     @FXML
     void startProcess(ActionEvent event) {
         started = true;
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+            timer = new Timer();
+        }
+        if (timer == null) {
+            timer = new Timer();
+        }
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
@@ -145,11 +163,22 @@ public class contentLayerController {
 
     @FXML
     void pauseProcess(ActionEvent event) {
-        timer.cancel();
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
     }
 
     @FXML
     void continueProcess(ActionEvent event) {
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+            timer = new Timer();
+        }
+        if (timer == null) {
+            timer = new Timer();
+        }
         if (started) {
             timer.schedule(new TimerTask() {
                 @Override
@@ -166,8 +195,18 @@ public class contentLayerController {
 
     @FXML
     void replayProcess(ActionEvent event) {
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+            timer = new Timer();
+        }
+        if (timer == null) {
+            timer = new Timer();
+        }
         if (currentPhase == cellDivisionProcessImage.size() - 1) {
             currentPhase = 0;
+            progress = 0;
+            processBar.setProgress(progress);
             CellDivision.setImage(cellDivisionProcessImage.get(currentPhase));
             timer.schedule(new TimerTask() {
                 @Override
@@ -178,7 +217,7 @@ public class contentLayerController {
                         showNextPhase(event);
                     }
                 }
-            }, 1000, 3000);
+            }, 3000, 3000);
         }
     }
 }
