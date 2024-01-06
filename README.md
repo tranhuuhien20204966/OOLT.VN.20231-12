@@ -10,4 +10,4 @@ Basic knowledge: Cell cycle, Direct cell division or amitosis, Mitosis, and Meio
 - 20210328 Phan Huy Hiệp
 ## Demo
 
-[Link video demo](https://translate.google.com/?hl=vi&sl=en&tl=vi&op=docs)
+[Link video demo](https://youtu.be/XUkywcprLps)
