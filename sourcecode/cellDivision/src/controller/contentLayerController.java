@@ -60,7 +60,7 @@ public class contentLayerController {
     
     @FXML
     void goBack(ActionEvent event) throws IOException {
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/sceen/main.fxml"));
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/screen/main.fxml"));
         Parent root = loader.load();
     	Scene scene = new Scene(root);
 //    	helpLayerController helpController = loader.getController();
@@ -91,7 +91,7 @@ public class contentLayerController {
             } catch (IllegalAccessException e) {
                 value = "Cannot access the field";
             }
-            System.out.println("Field: " + fieldName + ", Value: " + value);
+      
             fieldData.add(fieldName + " :" + value);
             Label label = new Label(fieldName + " :" + value);
             Vbox.getChildren().add(label);
@@ -106,8 +106,6 @@ public class contentLayerController {
         CellDivision.setImage(cellDivisionProcessImage.get(currentPhase + 1));
         currentPhase = currentPhase + 1;
         progress =(double) currentPhase/(cellDivisionProcessImage.size()-2);
-        System.out.println(currentPhase + "/" + (cellDivisionProcessImage.size()-1) );
-        System.out.println(progress);
         processBar.setProgress(progress);
     	}
     }
@@ -118,8 +116,6 @@ public class contentLayerController {
     		CellDivision.setImage(cellDivisionProcessImage.get(currentPhase - 1));
     		currentPhase = currentPhase - 1;
     		progress = (double)currentPhase/(cellDivisionProcessImage.size()-2);
-    		System.out.println(currentPhase + cellDivisionProcessImage.size()-1);
-    		System.out.println(progress);
     		processBar.setProgress(progress);
     	}
     }

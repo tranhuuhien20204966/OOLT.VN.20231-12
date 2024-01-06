@@ -15,10 +15,10 @@ public class helpLayerController {
 
     @FXML
     private Button BackButton;
-
+    
     @FXML
     void goBack(ActionEvent event) throws IOException {
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/sceen/main.fxml"));
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/screen/main.fxml"));
         Parent root = loader.load();
     	Scene scene = new Scene(root);
 //    	helpLayerController helpController = loader.getController();

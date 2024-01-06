@@ -1,4 +1,4 @@
-package sceen;
+package screen;
 
 
 import javafx.application.Application;
