@@ -1,4 +1,4 @@
-package sceen;
+package screen;
 
 	import java.lang.reflect.Field;
 import java.util.ArrayList;

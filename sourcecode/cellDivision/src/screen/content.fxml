@@ -20,11 +20,7 @@
          </image>
       </ImageView>
       <VBox fx:id="Vbox" layoutX="188.0" layoutY="68.0" prefHeight="146.0" prefWidth="435.0" />
-      <ImageView fx:id="CellDivision" fitHeight="189.0" fitWidth="258.0" layoutX="187.0" layoutY="223.0" pickOnBounds="true" AnchorPane.rightAnchor="187.0">
-         <image>
-            <Image url="@../../../../../../Hình%20ảnh/Ảnh%20chụp%20màn%20hình/2.1.png" />
-         </image>
-      </ImageView>
+      <ImageView fx:id="CellDivision" fitHeight="189.0" fitWidth="258.0" layoutX="187.0" layoutY="223.0" pickOnBounds="true" AnchorPane.rightAnchor="187.0" />
       <ProgressBar fx:id="processBar" layoutX="216.0" layoutY="426.0" prefWidth="200.0" progress="0.0" />
       <Button layoutX="55.0" layoutY="276.0" minWidth="70.0" mnemonicParsing="false" onAction="#startProcess" text="Start" />
       <HBox alignment="TOP_CENTER" layoutX="81.0" layoutY="461.0" prefHeight="45.0" prefWidth="240.0">

@@ -60,7 +60,7 @@ public class mainLayerController {
 			    try {
 			        Mitosis.add(new Image("/image/eukaryotic/Mitosis/Mi_phase" + (i + 1) + ".png"));
 			        ++i;
-			        System.out.println("Ok" + i);
+			      
 			    } catch (Exception e) {
 			        /// In thông báo lỗi
 			        
@@ -84,7 +84,7 @@ public class mainLayerController {
 		    try {
 		        Meiosis.add(new Image("/image/eukaryotic/Meiosis/Me_phase" + (i + 1) + ".png"));
 		        ++i;
-		        System.out.println("Ok" + i);
+		       
 		    } catch (Exception e) {
 		        /// In thông báo lỗi
 		        
@@ -110,7 +110,7 @@ public class mainLayerController {
 			    try {
 			        Amitosis.add(new Image("/image/prokaryotic/amitosis/phase" + i + ".png"));
 			        ++i;
-			        System.out.println("Ok" + i);
+			    
 			    } catch (Exception e) {
 			        /// In thông báo lỗi
 			        
@@ -129,7 +129,7 @@ public class mainLayerController {
 
     @FXML
     void displayInforHelp(ActionEvent event) throws IOException {
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/sceen/help.fxml"));
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/screen/help.fxml"));
         Parent root = loader.load();
     	Scene scene = new Scene(root);
 //    	helpLayerController helpController = loader.getController();
@@ -143,7 +143,7 @@ public class mainLayerController {
 
  
     private void showcellDivisionImage(String imagePath,Stage stage, Object object, ArrayList<Image> ImageList) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/sceen/content.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/screen/content.fxml"));
         Parent root = loader.load();
         contentLayerController imageScreenController = loader.getController();
         imageScreenController.setImage(imagePath, ImageList.get(0));
