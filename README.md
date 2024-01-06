@@ -1,9 +1,11 @@
-# OOLT.VN.20231-12  
+# Demonstration of types of cell division
 
+Basic knowledge: Cell cycle, Direct cell division or amitosis, Mitosis, and Meiosis
 
-Mini project OOP - group 12  
-Group member  :  
-     20215043	Phạm Đình Hải   
-     20215045	Phạm Công Hào  
-     20204966	Trần Hữu Hiến  
-     20210328	Phan Huy Hiệp  
+## Group member  :  
+     - 20215043	Phạm Đình Hải   
+     - 20215045	Phạm Công Hào  
+     - 20204966	Trần Hữu Hiến  
+     - 20210328	Phan Huy Hiệp  
+## Demo
+     [Link demo](https://youtu.be/XUkywcprLps)
